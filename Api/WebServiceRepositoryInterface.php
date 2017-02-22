@@ -1,10 +1,10 @@
 <?php
 
-namespace Demac\WebService\Api;
+namespace Ruddy\WebService\Api;
 
 /**
  * Interface WebServiceRepositoryInterface
- * @package Demac\WebService\Api
+ * @package Ruddy\WebService\Api
  */
 interface WebServiceRepositoryInterface{
     /**

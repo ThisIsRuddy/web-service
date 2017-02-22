@@ -1,37 +1,37 @@
 <?xml version="1.0" ?>
 <routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
     <route url="/V1/products/count" method="GET">
-        <service class="Demac\WebService\Api\WebServiceRepositoryInterface" method="getCatalogProductCount"/>
+        <service class="Ruddy\WebService\Api\WebServiceRepositoryInterface" method="getCatalogProductCount"/>
         <resources>
             <resource ref="anonymous"/>
         </resources>
     </route>
     <route url="/V1/categories/:categoryId/count" method="GET">
-        <service class="Demac\WebService\Api\WebServiceRepositoryInterface" method="getCategoryProductCount"/>
+        <service class="Ruddy\WebService\Api\WebServiceRepositoryInterface" method="getCategoryProductCount"/>
         <resources>
             <resource ref="anonymous"/>
         </resources>
     </route>
     <route url="/V1/products/:sku/configurable-attributes" method="GET">
-        <service class="Demac\WebService\Api\WebServiceRepositoryInterface" method="getConfigurableAttributes"/>
+        <service class="Ruddy\WebService\Api\WebServiceRepositoryInterface" method="getConfigurableAttributes"/>
         <resources>
             <resource ref="anonymous"/>
         </resources>
     </route>
     <route url="/V1/products/:sku/used-product-attributes" method="GET">
-        <service class="Demac\WebService\Api\WebServiceRepositoryInterface" method="getUsedProductAttributes"/>
+        <service class="Ruddy\WebService\Api\WebServiceRepositoryInterface" method="getUsedProductAttributes"/>
         <resources>
             <resource ref="anonymous"/>
         </resources>
     </route>
     <route url="/V1/products/:sku/configurable-variations2" method="GET">
-        <service class="Demac\WebService\Api\WebServiceRepositoryInterface" method="getConfigurableVariations"/>
+        <service class="Ruddy\WebService\Api\WebServiceRepositoryInterface" method="getConfigurableVariations"/>
         <resources>
             <resource ref="anonymous"/>
         </resources>
     </route>
     <route url="/V1/products/:sku/configurable-variations2" method="POST">
-        <service class="Demac\WebService\Api\WebServiceRepositoryInterface" method="setConfigurableVariations"/>
+        <service class="Ruddy\WebService\Api\WebServiceRepositoryInterface" method="setConfigurableVariations"/>
         <resources>
             <resource ref="anonymous"/>
         </resources>
